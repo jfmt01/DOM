@@ -11,7 +11,8 @@ form.addEventListener ("submit", function (e) {
     if (name.value === "" || name.value === null || name.value.length < 3) {
         e.preventDefault();
         name.style.background ="darkred";
-        name.placeholder = "El nombre es muy corto";         
+        name.placeholder = "El nombre es muy corto";
+        window.localStorage.removeItem("Nombre", name.value);         
     }
 
     name.addEventListener("click", function () {
@@ -22,7 +23,8 @@ form.addEventListener ("submit", function (e) {
     if (apellido.value === "" || apellido.value === null || apellido.value.length < 3) {
         e.preventDefault();
         apellido.style.background ="darkred";
-        apellido.placeholder = "El apellido es muy corto";    
+        apellido.placeholder = "El apellido es muy corto";
+        window.localStorage.removeItem("Nombre", name.value);
     }
 
     apellido.addEventListener("click", function () {
@@ -32,8 +34,9 @@ form.addEventListener ("submit", function (e) {
 
     if (email.value === "" || email.value === null ) {
         e.preventDefault();
-        email.style.background ="darkred";
+        email.style.background ="darkred";    
         email.placeholder = "Ingrese un e-mail válido";     
+        window.localStorage.removeItem("Nombre", name.value);
     }
     
     email.addEventListener("click", function () {
@@ -45,6 +48,7 @@ form.addEventListener ("submit", function (e) {
         e.preventDefault();
         pass.style.background ="darkred";
         pass.placeholder = "Contraseña muy corta";
+        window.localStorage.removeItem("Nombre", name.value);
     }
     pass.addEventListener("click", function () {
         this.style.background ="";
@@ -55,12 +59,13 @@ form.addEventListener ("submit", function (e) {
         e.preventDefault();
         tel.style.background ="darkred";
         tel.placeholder = "El teléfono no es válido"; 
+        window.localStorage.removeItem("Nombre", name.value);
     }
     tel.addEventListener("click", function () {
         this.style.background ="";
         this.placeholder = "Teléfono"; 
     })
-    window.localStorage.setItem("Nombre", name.value);
+    
     
 })
 

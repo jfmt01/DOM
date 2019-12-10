@@ -1,6 +1,6 @@
 body{
     color: white;
-    background-image: linear-gradient(to right top, #857772, #9c8e8d, #b2a7a9, #c7c1c4, #dedbde, #e8d9e8, #f1d7f2, #fad5fc, #ffaee1, #ff82ae, #ff5968, #ff4300);
+    background: url(/assets/images/background3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -70,11 +70,16 @@ img{
 }
 
 #agregar li a {
+    margin: 5px;
+    border-radius: 10px;
+    background: chocolate;
+    font-size: 1.5rem;
     color: black;
     display: block;
     padding: 20px 0;
     text-decoration: none;
 }
+
 #agregar li a:hover {
     text-decoration: line-through;
 }
