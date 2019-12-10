@@ -28,10 +28,6 @@ h1{
     text-justify: center;
 }
 
-#bienvenida{
-
-}
-
 #lista {
     padding: 10%;
     border-radius: 10px;
@@ -51,7 +47,8 @@ h1{
     padding: 2%
 }
 
-.button {
+
+.btn {
     margin: 20px;
     font-size: 30px;
     background-color: chocolate;
@@ -66,6 +63,20 @@ img{
 
 #tareas {
     grid-column: 2/4;
+}
+
+#agregar {
+    list-style: none;
+}
+
+#agregar li a {
+    color: black;
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+}
+#agregar li a:hover {
+    text-decoration: line-through;
 }
 
 .tit{
