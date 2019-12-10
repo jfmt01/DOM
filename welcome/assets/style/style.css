@@ -1,0 +1,73 @@
+body{
+    color: white;
+    background-image: linear-gradient(to right top, #857772, #9c8e8d, #b2a7a9, #c7c1c4, #dedbde, #e8d9e8, #f1d7f2, #fad5fc, #ffaee1, #ff82ae, #ff5968, #ff4300);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+h1{
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    background:linear-gradient(to right top, #000000, #532623, #975420, #bb9900, #a8eb12);;
+    align-content: center;
+    padding: 10%;
+    text-justify: center;
+}
+
+#bienvenida{
+
+}
+
+#lista {
+    padding: 10%;
+    border-radius: 10px;
+    margin-right: 10%;
+    background: linear-gradient(to right top, #858585, #626262, #424242, #232323, #000000);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-content: center;
+
+}
+
+#tarea{
+    border-radius: 10px;
+    width: 90%;
+    font-size: 30px;
+    padding: 2%
+}
+
+.button {
+    margin: 20px;
+    font-size: 30px;
+    background-color: chocolate;
+    border-radius: 10px;
+    float: right;
+}
+
+img{
+    width: 30%;
+    height: 50%;
+} 
+
+#tareas {
+    grid-column: 2/4;
+}
+
+.tit{
+    color: black;
+}
