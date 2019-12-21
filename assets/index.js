@@ -66,7 +66,7 @@ form.addEventListener ("submit", function (e) {
         this.placeholder = "Teléfono"; 
     })
     
-    
+    window.localStorage.setItem("Nombre", name.value);
 })
 
 

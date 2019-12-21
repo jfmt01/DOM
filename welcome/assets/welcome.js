@@ -16,7 +16,7 @@ const task = document.querySelector("#tarea"),
         content = document.createTextNode(tarea);
 
         if (tarea === "" || tarea === null) {
-            task.placeholder = "La tarea es muy corta";
+            task.placeholder = "No has agregado ninguna tarea";
             task.style.background = "darkred";
             return false;
         };
@@ -44,4 +44,4 @@ const task = document.querySelector("#tarea"),
 
 btnAñadir.addEventListener("click", agregarTarea);
 
-task.addEventListener ("click",validar);
+tarea.addEventListener ("click",validar);
